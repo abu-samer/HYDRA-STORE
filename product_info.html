@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product - Hydra Store</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body class="bg-blue-100 min-h-screen flex flex-col">
+
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+            <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+                
+                <!-- Logo (SVG) -->
+                <a href="index.html" class="flex items-center gap-2.5 text-xl font-bold text-gray-900">
+                    <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
+                        <svg class="w-7 h-7 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                            <path d="M14 13V27M26 13V27M14 20H26" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span>Hydra <span class="text-blue-600">Store</span></span>
+                </a>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+                    <a href="products.html" class="hover:text-blue-600 transition">Products</a>
+                    <a href="deals.html" class="bg-green-100 text-green-700 px-3 py-1 rounded-full hover:bg-green-200 transition">Offers</a>
+                    <a href="about.html" class="hover:text-blue-600 transition">About</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center gap-3">
+                    <button class="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition cursor-pointer" title="Dark Mode">
+                        🌙
+                    </button>
+                    <button class="relative w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition cursor-pointer" title="Cart">
+                        🛒
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">0</span>
+                    </button>
+                    <button class="hidden md:block px-4 py-1.5 border border-blue-600 text-blue-600 text-sm font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition cursor-pointer">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow">
+            <section class="flex flex-col">
+
+                <div class="flex flex-col items-center p-5 gap-3"> <!-- main div -->
+                    <div class="flex flex-col lg:flex-row bg-white p-5 rounded-2xl w-full max-w-6xl"> <!-- the first section (div) of the product-->
+                        <div class="flex flex-row justify-center items-center">
+                            <img src="1727175019_1851608.jpg" alt="headPhone" class="max-w-[400px] w-full h-auto object-contain">
+                        </div>
+                        
+                        <div class="flex flex-col p-5 gap-8"> <!-- The product informations next to the image -->
+                            <h6 class="text-blue-700 font-bold">AUDIO</h6>
+                            <h1 class="text-4xl font-bold">Hydra Studio Wireless Headphones</h1>
+
+                            <div class="flex flex-row items-center gap-3">
+                                <h1 class="text-4xl font-bold">$149.00</h1>
+                                <h4 class="text-orange-400 bg-orange-100 font-bold rounded-2xl px-2 py-1">★4.9 (142 reviews)</h4>
+                            </div>
+                            
+                            <div class="text-gray-500">Custom 40mm beryllium acoustic drivers with deep bass & adaptive active noise cancellation.</div>
+
+                            <div class="flex flex-row gap-2 justify-center lg:justify-start"> <!-- Buttons -->
+                                <button id="addToBagBtn" class="bg-blue-600 hover:bg-blue-900 transition-colors w-[70%] h-[50px] rounded-lg text-white font-bold cursor-pointer">Add to Shopping Bag</button>
+                                <a href="shipping.html" class="bg-white hover:bg-blue-50 hover:border-blue-700 hover:text-blue-600 transition-colors w-[30%] h-[50px] rounded-lg text-black font-bold border-1 border-gray-200 flex items-center justify-center">Fast Delivery</a>
+                            </div>
+
+                            <div class="flex flex-row flex-wrap justify-start gap-5 text-gray-500">
+                                <span>✓ In Stock & Ready to Ship</span>
+                                <span>✓ 30-Day Risk-Free Trial</span>
+                                <span>✓ Carbon-Neutral</span>
+                            </div>
+                        </div>
+                        
+                    </div> <!-- the first section of the product end -->
+
+                    <div class="flex flex-col lg:flex-row justify-center gap-5 rounded-2xl w-full max-w-6xl"> <!-- The container of 2nd and 3rd divs of the product -->
+                        
+                        <div class="flex flex-col gap-3 p-5 lg:w-[60%] rounded-2xl bg-white"> <!-- 2nd div -->
+                            <h1 class="text-2xl text-black font-bold">🛡 Brand Origin & Manufacturing</h1>
+                            <h6 class="text-gray-500">Engineered and hand-assembled at Hydra Nordic Lab AB, Stockholm, Sweden. Built with recycled acoustic beryllium drivers and anodized aerospace frame.</h6>
+                            
+                            <div class="flex flex-row flex-wrap gap-3">
+                                <span class="text-blue-600 font-bold border-1 border-blue-200 rounded-2xl pl-2 pr-2">🕑 Batch Tested & Certified</span>
+                                <span class="text-blue-600 font-bold border-1 border-blue-200 rounded-2xl pl-2 pr-2">✓ Zero Waste Facility</span>
+                                <span class="text-blue-600 font-bold border-1 border-blue-200 rounded-2xl pl-2 pr-2"><> ISO 14001 Compliant</span>
+                            </div>
+
+                            <div class="flex flex-col border-1 border-gray-200 bg-blue-100 p-5 rounded-lg">
+                                <div class="text-gray-500 font-bold">Authenticity Guarantee</div>
+                                <div class="text-black font-bold">SN: HYD-AUDIO-9482-SE</div>
+                            </div>
+                        </div> <!-- 2nd div -->
+
+                        <div class="flex flex-col gap-3 p-5 lg:w-[40%] rounded-2xl bg-white"> <!-- 3rd div -->
+                            <h1 class="text-2xl text-black font-bold">🖥 Technical Specifications</h1>
+
+                            <div class="flex flex-row justify-start gap-8 border-b-1 border-b-gray-200 pb-2">
+                                <span class="text-gray-500 font-bold">Dimensions</span>
+                                <span class="text-black font-bold">184 * 165 * 78 mm</span>
+                            </div>
+
+                            <div class="flex flex-row justify-start gap-8 border-b-1 border-b-gray-200 pb-2">
+                                <span class="text-gray-500 font-bold">Weight</span>
+                                <span class="text-black font-bold">248 grams</span>
+                            </div>
+
+                            <div class="flex flex-row justify-start gap-8 border-b-1 border-b-gray-200 pb-2">
+                                <span class="text-gray-500 font-bold">Materials</span>
+                                <span class="text-black font-bold">Aerospace Aluminum, Vegan Leather & Beryllium</span>
+                            </div>
+
+                            <div class="flex flex-row justify-start gap-8 border-b-1 border-b-gray-200 pb-2">
+                                <span class="text-gray-500 font-bold">Connectivity</span>
+                                <span class="text-black font-bold">Bluetooth 5.3 Low Latency + 3.5mm Hi-Res Jack</span>
+                            </div>
+
+                            <div class="flex flex-row justify-start gap-8 border-b-1 border-b-gray-200 pb-2">
+                                <span class="text-gray-500 font-bold">Battery Life</span>
+                                <span class="text-black font-bold">45 Hours (Active ANC Enabled)</span>
+                            </div>
+
+                            <div class="flex flex-row justify-start gap-8">
+                                <span class="text-gray-500 font-bold">Warranty</span>
+                                <span class="text-black font-bold">2-Year Full Replacement Worldwide</span>
+                            </div>
+
+                        </div> <!-- 3rd div end -->
+                    </div>
+
+                    <div class="flex flex-col items-stretch rounded-2xl p-5 w-full max-w-6xl bg-white"> <!-- 4th div -->
+
+                        <div class="flex flex-col gap-3"> <!-- rating -->
+
+                            <div class="flex flex-col items-center sm:justify-start p-5 bg-white"> <!-- the ratio -->
+                                <h1 class="text-4xl text-black font-bold">4.9</h1>
+                                <div class="text-yellow-500">★★★★★</div>
+                                <div class="text-gray-500">Based on 142 verified orders</div>
+                                <div class="text-green-500 bg-green-200 rounded-2xl p-2 mt-2">98% Would Recommend</div>
+                            </div>
+
+                            <div class="flex flex-col w-full gap-6"> <!-- ratings -->
+                                <h2 class="text-3xl text-black font-bold">Verified Customer Feedback</h2>
+
+                                <div class="flex flex-col gap-2 border-1 border-gray-200 p-4 rounded-2xl"> <!-- rating 1 -->
+                                    <div class="flex flex-row flex-wrap gap-3 justify-start"> <!-- rater 1 info -->
+                                        <div class="text-black font-bold">Elena Lindqvist</div>
+                                        <div class="text-green-500 bg-green-200 font-bold pl-2 pr-2 rounded-2xl">✓ Verified Buyer</div>
+                                        <div class="text-yellow-500 font-bold">★★★★★</div>
+                                    </div>
+                                    <div> <!-- The review -->
+                                        "The build quality is astonishing. The tactile response and natural acoustic balance exceeded my expectations. Delivered in 2 days to Gothenburg in immaculate condition."
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-col gap-2 border-1 border-gray-200 p-4 rounded-2xl"> <!-- rating 2 -->
+                                    <div class="flex flex-row flex-wrap gap-3 justify-start"> <!-- rater 2 info -->
+                                        <div class="text-black font-bold">Marcus Thorne</div>
+                                        <div class="text-green-500 bg-green-200 font-bold pl-2 pr-2 rounded-2xl">✓ Verified Buyer</div>
+                                        <div class="text-yellow-500 font-bold">★★★★★</div>
+                                    </div>
+                                    <div> <!-- The review -->
+                                        "Clean lines, beautiful materials, and zero unnecessary fluff. You can instantly tell Hydra Nordic Lab spent obsessive hours on every detail."
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div> <!-- main div end -->
+
+            </section>
+        </main>
+
+        <footer class="flex flex-col bg-white mt-auto border-t border-gray-200">
+            <div class="flex flex-col lg:flex-row max-w-6xl w-full mx-auto p-5 lg:justify-between gap-5"> <!-- top half -->
+
+                <div class="flex flex-col gap-3"> <!-- 1st column -->
+                    <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-gray-900">
+                        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+                                <path d="M14 13V27M26 13V27M14 20H26" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <span>Hydra <span class="text-blue-600">Store</span></span>
+                    </a>
+                    <div class="text-gray-500 max-w-[500px]">Vibrant hardware and everyday essentials engineered with timeless Swedish craftsmanship.</div>
+                </div>
+
+                <div class="flex flex-col gap-1"> <!-- 2nd column -->
+                    <h6 class="text-black font-bold">Navigation</h6>
+                    <a href="products.html" class="text-gray-500 hover:text-blue-600 transition">All Products</a>
+                    <a href="index.html#featured" class="text-gray-500 hover:text-blue-600 transition">Featured Picks</a>
+                    <a href="deals.html" class="text-gray-500 hover:text-blue-600 transition">Deals & Drops</a>
+                    <a href="about.html" class="text-gray-500 hover:text-blue-600 transition">About Us</a>
+                </div>
+
+                <div class="flex flex-col gap-1"> <!-- 3rd column -->
+                    <h6 class="text-black font-bold">Customer Care</h6>
+                    <a href="shipping.html" class="text-gray-500 hover:text-blue-600 transition">Shipping Policies</a>
+                    <a href="warranty.html" class="text-gray-500 hover:text-blue-600 transition">Warranty</a>
+                </div>
+
+                <div class="flex flex-col gap-1"> <!-- 4th column -->
+                    <h6 class="text-black font-bold">Contact</h6>
+                    <span class="text-gray-500">support@hydrastore.io</span>
+                    <a class="text-blue-700 font-bold hover:underline" href="about.html">Open Contact Form →</a>
+                </div>
+            </div> <!-- top half end -->
+
+            <div class="flex flex-col sm:flex-row justify-between max-w-6xl w-full mx-auto p-5 border-t border-gray-100 gap-3"> <!-- bottom half -->
+                <div class="text-gray-500">© 2026 Hydra Store AB. All rights reserved.</div>
+                <div class="flex flex-row gap-3">
+                    <a href="about.html" class="text-gray-500 hover:text-gray-800 transition">Contact Us</a>
+                    <span class="text-gray-300">•</span>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition">Privacy Policy</a>
+                    <span class="text-gray-300">•</span>
+                    <a href="#" class="text-gray-500 hover:text-gray-800 transition">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+       
+
+    </body>
+</html>
