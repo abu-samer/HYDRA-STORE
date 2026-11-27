@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Hydra Store</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
+
+    <body class="bg-gray-50">
+        <main>
+            <section class="flex flex-row justify-center items-center min-h-screen p-4">
+                <form class="flex flex-col justify-center px-10 py-10 border-2 border-gray-300 w-full max-w-[500px] items-center gap-5 bg-white rounded-2xl shadow-lg">
+                    
+                    <div class="flex flex-row justify-between items-start w-full border-b-2 border-b-gray-200 pb-3">
+                        <div class="flex flex-col gap-1">
+                            <h2 class="text-2xl font-bold">Hydra Client Portal</h2>
+                            <h6 class="text-gray-500 text-sm">Access your curated orders and saved gear.</h6>
+                        </div>
+
+                        <a href="index.html" class="flex items-center justify-center text-gray-500 font-bold rounded-full h-[40px] w-[40px] hover:bg-blue-50 hover:text-blue-600 transition-colors">
+                            X
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col justify-start w-full gap-1">
+                        <label for="Email" class="font-bold text-gray-500">Email Address *</label>
+                        <input type="email" id="Email" name="Email" placeholder="name@domain.com" class="w-full border-1 border-gray-300 bg-gray-100 rounded-lg h-10 p-2 focus:outline-none focus:border-blue-600" required>
+                    </div>
+
+                    <div class="flex flex-col justify-start w-full gap-1">
+                        <label for="Password" class="font-bold text-gray-500">Password *</label>
+                        <input type="password" id="Password" name="Password" placeholder="Enter your password" class="w-full border-1 border-gray-300 bg-gray-100 rounded-lg h-10 p-2 focus:outline-none focus:border-blue-600" required>
+                    </div>
+
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-900 transition-colors w-full h-[50px] rounded-lg text-white font-bold cursor-pointer">Login</button>
+
+                    <div class="flex flex-row gap-1 text-sm">
+                        <div class="text-gray-500">Don't have an account?</div>
+                        <a href="register.html" class="text-blue-700 font-bold hover:underline">Register Now</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hydra Store - Shipping Policy</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      
+      <!-- Logo (SVG) -->
+      <a href="index.html" class="flex items-center gap-2.5 text-xl font-bold text-gray-900">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
+          <svg class="w-7 h-7 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+            <path d="M14 13V27M26 13V27M14 20H26" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+          </svg>
+        </div>
+        <span>Hydra <span class="text-blue-600">Store</span></span>
+      </a>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="products.html" class="hover:text-blue-600 transition">Products</a>
+        <a href="deals.html" class="bg-green-100 text-green-700 px-3 py-1 rounded-full hover:bg-green-200 transition">Offers</a>
+        <a href="about.html" class="hover:text-blue-600 transition">About</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <button class="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition" title="Dark Mode">
+          🌙
+        </button>
+        <button class="relative w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition" title="Cart">
+          🛒
+          <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">0</span>
+        </button>
+        <a href="login.html" class="hidden md:block px-4 py-1.5 border border-blue-600 text-blue-600 text-sm font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition">
+          Login
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-4xl mx-auto px-4 py-12 w-full">
+    
+    <!-- Breadcrumbs -->
+    <div class="flex items-center gap-2 text-sm text-gray-500 mb-6">
+      <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+      <span>/</span>
+      <span class="text-gray-900 font-semibold">Shipping Policy</span>
+    </div>
+
+    <!-- Back Button -->
+    <a href="index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 bg-blue-50 px-3.5 py-1.5 rounded-lg hover:bg-blue-100 transition mb-8">
+      ← Back to Store
+    </a>
+
+    <!-- Title & Subtitle -->
+    <div class="mb-8">
+      <span class="inline-block px-3 py-1 mb-3 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">
+        Global Logistics
+      </span>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+        Worldwide Express Shipping Policy
+      </h1>
+      <p class="text-gray-600 leading-relaxed">
+        Every Hydra purchase is handled with care, packed in sustainable FSC-certified protective materials, and dispatched from our primary distribution hubs in Stockholm and Frankfurt.
+      </p>
+    </div>
+
+    <!-- Shipping Specs Box -->
+    <div class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm mb-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-xl">
+          🚚
+        </div>
+        <h2 class="text-xl font-bold text-gray-900">Shipping Methods & Transit Times</h2>
+      </div>
+
+      <!-- Specs Table -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm border-collapse">
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50 transition">
+              <td class="py-4 pr-4 font-semibold text-gray-500 w-1/3 align-top">Standard Delivery</td>
+              <td class="py-4 font-medium text-gray-800">5–8 business days • Free on orders over $75 ($8 flat rate below $75)</td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="py-4 pr-4 font-semibold text-gray-500 align-top">Express Courier (DHL/FedEx)</td>
+              <td class="py-4 font-medium text-gray-800">2–4 business days worldwide • Priority customs clearance with live GPS tracking ($18)</td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="py-4 pr-4 font-semibold text-gray-500 align-top">Carbon Neutrality</td>
+              <td class="py-4 font-medium text-gray-800">100% of transit emissions offset via verified bio-char & forestry regeneration programs</td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="py-4 pr-4 font-semibold text-gray-500 align-top">Fulfillment Speed</td>
+              <td class="py-4 font-medium text-gray-800">Orders placed before 14:00 CET are dispatched the same business day</td>
+            </tr>
+            <tr class="hover:bg-gray-50 transition">
+              <td class="py-4 pr-4 font-semibold text-gray-500 align-top">Customs & Duties</td>
+              <td class="py-4 font-medium text-gray-800">All applicable VAT, import taxes, and duties are prepaid by Hydra for over 130 countries</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Feature Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+        <h3 class="text-base font-bold text-gray-900 mb-2">Real-Time Tracking</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          You receive an interactive tracking link via SMS and email as soon as your parcel departs our Stockholm facility.
+        </p>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+        <h3 class="text-base font-bold text-gray-900 mb-2">Secure Signature Delivery</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          High-value packages require recipient signature upon arrival to guarantee safe and verified handover.
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-12 mt-auto">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+
+        <div>
+          <a href="index.html" class="text-lg font-bold text-gray-900 block mb-3">
+            Hydra <span class="text-blue-600">Store</span>
+          </a>
+          <p class="text-sm text-gray-600">
+            Simple tech and desk accessories for everyday use.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-gray-900 text-sm mb-3">Links</h4>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li><a href="products.html" class="hover:text-blue-600 transition">All Products</a></li>
+            <li><a href="index.html#featured" class="hover:text-blue-600 transition">Featured</a></li>
+            <li><a href="deals.html" class="hover:text-blue-600 transition">Offers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-gray-900 text-sm mb-3">Help</h4>
+          <ul class="space-y-2 text-sm text-gray-600">
+            <li><a href="shipping.html" class="text-blue-600 font-semibold">Shipping</a></li>
+            <li><a href="warranty.html" class="hover:text-blue-600 transition">Warranty</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-100 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 gap-4">
+        <p>© 2026 Hydra Store. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-gray-800 transition">Privacy</a>
+          <a href="#" class="hover:text-gray-800 transition">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

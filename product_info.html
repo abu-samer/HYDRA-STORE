@@ -7,16 +7,16 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 
-    <body class="bg-blue-100 min-h-screen flex flex-col">
+    <body class="bg-gray-50 min-h-screen flex flex-col">
 
         <!-- Header -->
         <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-            <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-y-3">
                 
                 <!-- Logo (SVG) -->
-                <a href="index.html" class="flex items-center gap-2.5 text-xl font-bold text-gray-900">
-                    <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
-                        <svg class="w-7 h-7 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="index.html" class="flex items-center gap-2 text-lg sm:text-xl font-bold text-gray-900">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
+                        <svg class="w-6 h-6 sm:w-7 sm:h-7 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
                             <path d="M14 13V27M26 13V27M14 20H26" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
                         </svg>
@@ -24,27 +24,28 @@
                     <span>Hydra <span class="text-blue-600">Store</span></span>
                 </a>
 
+                <!-- Actions -->
+                <div class="flex items-center gap-2 sm:gap-3 md:order-3">
+                    <button class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition cursor-pointer" title="Dark Mode">
+                        🌙
+                    </button>
+                    <button class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition cursor-pointer" title="Cart">
+                        🛒
+                        <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">0</span>
+                    </button>
+                    <a href="login.html" class="px-3 py-1.5 sm:px-4 border border-blue-600 text-blue-600 text-xs sm:text-sm font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition">
+                        Login
+                    </a>
+                </div>
+
                 <!-- Navigation -->
-                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+                <nav class="w-full md:w-auto flex items-center justify-center gap-4 sm:gap-6 text-sm font-medium text-gray-600 border-t border-gray-100 pt-2 md:border-0 md:pt-0 md:order-2">
                     <a href="index.html" class="hover:text-blue-600 transition">Home</a>
                     <a href="products.html" class="hover:text-blue-600 transition">Products</a>
                     <a href="deals.html" class="bg-green-100 text-green-700 px-3 py-1 rounded-full hover:bg-green-200 transition">Offers</a>
                     <a href="about.html" class="hover:text-blue-600 transition">About</a>
                 </nav>
 
-                <!-- Actions -->
-                <div class="flex items-center gap-3">
-                    <button class="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition cursor-pointer" title="Dark Mode">
-                        🌙
-                    </button>
-                    <button class="relative w-10 h-10 rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center hover:bg-gray-200 transition cursor-pointer" title="Cart">
-                        🛒
-                        <span id="cartCount" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold">0</span>
-                    </button>
-                    <button class="hidden md:block px-4 py-1.5 border border-blue-600 text-blue-600 text-sm font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition cursor-pointer">
-                        Login
-                    </button>
-                </div>
             </div>
         </header>
 
@@ -52,7 +53,7 @@
             <section class="flex flex-col">
 
                 <div class="flex flex-col items-center p-5 gap-3"> <!-- main div -->
-                    <div class="flex flex-col lg:flex-row bg-white p-5 rounded-2xl w-full max-w-6xl"> <!-- the first section (div) of the product-->
+                    <div class="flex flex-col lg:flex-row bg-white p-5 rounded-2xl w-full max-w-6xl border border-gray-200"> <!-- the first section (div) of the product-->
                         <div class="flex flex-row justify-center items-center">
                             <img src="1727175019_1851608.jpg" alt="headPhone" class="max-w-[400px] w-full h-auto object-contain">
                         </div>
@@ -84,7 +85,7 @@
 
                     <div class="flex flex-col lg:flex-row justify-center gap-5 rounded-2xl w-full max-w-6xl"> <!-- The container of 2nd and 3rd divs of the product -->
                         
-                        <div class="flex flex-col gap-3 p-5 lg:w-[60%] rounded-2xl bg-white"> <!-- 2nd div -->
+                        <div class="flex flex-col gap-3 p-5 lg:w-[60%] rounded-2xl bg-white border border-gray-200"> <!-- 2nd div -->
                             <h1 class="text-2xl text-black font-bold">🛡 Brand Origin & Manufacturing</h1>
                             <h6 class="text-gray-500">Engineered and hand-assembled at Hydra Nordic Lab AB, Stockholm, Sweden. Built with recycled acoustic beryllium drivers and anodized aerospace frame.</h6>
                             
@@ -94,13 +95,13 @@
                                 <span class="text-blue-600 font-bold border-1 border-blue-200 rounded-2xl pl-2 pr-2"><> ISO 14001 Compliant</span>
                             </div>
 
-                            <div class="flex flex-col border-1 border-gray-200 bg-blue-100 p-5 rounded-lg">
+                            <div class="flex flex-col border-1 border-gray-200 bg-blue-50 p-5 rounded-lg">
                                 <div class="text-gray-500 font-bold">Authenticity Guarantee</div>
                                 <div class="text-black font-bold">SN: HYD-AUDIO-9482-SE</div>
                             </div>
                         </div> <!-- 2nd div -->
 
-                        <div class="flex flex-col gap-3 p-5 lg:w-[40%] rounded-2xl bg-white"> <!-- 3rd div -->
+                        <div class="flex flex-col gap-3 p-5 lg:w-[40%] rounded-2xl bg-white border border-gray-200"> <!-- 3rd div -->
                             <h1 class="text-2xl text-black font-bold">🖥 Technical Specifications</h1>
 
                             <div class="flex flex-row justify-start gap-8 border-b-1 border-b-gray-200 pb-2">
@@ -136,7 +137,7 @@
                         </div> <!-- 3rd div end -->
                     </div>
 
-                    <div class="flex flex-col items-stretch rounded-2xl p-5 w-full max-w-6xl bg-white"> <!-- 4th div -->
+                    <div class="flex flex-col items-stretch rounded-2xl p-5 w-full max-w-6xl bg-white border border-gray-200"> <!-- 4th div -->
 
                         <div class="flex flex-col gap-3"> <!-- rating -->
 
@@ -181,56 +182,48 @@
             </section>
         </main>
 
-        <footer class="flex flex-col bg-white mt-auto border-t border-gray-200">
-            <div class="flex flex-col lg:flex-row max-w-6xl w-full mx-auto p-5 lg:justify-between gap-5"> <!-- top half -->
+        <!-- Footer -->
+        <footer class="bg-white border-t border-gray-200 py-12 mt-auto">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
 
-                <div class="flex flex-col gap-3"> <!-- 1st column -->
-                    <a href="index.html" class="flex items-center gap-2 text-lg font-bold text-gray-900">
-                        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <polygon points="20,3 35,11.5 35,28.5 20,37 5,28.5 5,11.5" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
-                                <path d="M14 13V27M26 13V27M14 20H26" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                        <span>Hydra <span class="text-blue-600">Store</span></span>
-                    </a>
-                    <div class="text-gray-500 max-w-[500px]">Vibrant hardware and everyday essentials engineered with timeless Swedish craftsmanship.</div>
+                    <div>
+                        <a href="index.html" class="text-lg font-bold text-gray-900 block mb-3">
+                            Hydra <span class="text-blue-600">Store</span>
+                        </a>
+                        <p class="text-sm text-gray-600">
+                            Simple tech and desk accessories for everyday use.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-sm mb-3">Links</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><a href="products.html" class="hover:text-blue-600 transition">All Products</a></li>
+                            <li><a href="index.html#featured" class="hover:text-blue-600 transition">Featured</a></li>
+                            <li><a href="deals.html" class="hover:text-blue-600 transition">Offers</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-sm mb-3">Help</h4>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><a href="shipping.html" class="hover:text-blue-600 transition">Shipping</a></li>
+                            <li><a href="warranty.html" class="hover:text-blue-600 transition">Warranty</a></li>
+                        </ul>
+                    </div>
+
                 </div>
 
-                <div class="flex flex-col gap-1"> <!-- 2nd column -->
-                    <h6 class="text-black font-bold">Navigation</h6>
-                    <a href="products.html" class="text-gray-500 hover:text-blue-600 transition">All Products</a>
-                    <a href="index.html#featured" class="text-gray-500 hover:text-blue-600 transition">Featured Picks</a>
-                    <a href="deals.html" class="text-gray-500 hover:text-blue-600 transition">Deals & Drops</a>
-                    <a href="about.html" class="text-gray-500 hover:text-blue-600 transition">About Us</a>
-                </div>
-
-                <div class="flex flex-col gap-1"> <!-- 3rd column -->
-                    <h6 class="text-black font-bold">Customer Care</h6>
-                    <a href="shipping.html" class="text-gray-500 hover:text-blue-600 transition">Shipping Policies</a>
-                    <a href="warranty.html" class="text-gray-500 hover:text-blue-600 transition">Warranty</a>
-                </div>
-
-                <div class="flex flex-col gap-1"> <!-- 4th column -->
-                    <h6 class="text-black font-bold">Contact</h6>
-                    <span class="text-gray-500">support@hydrastore.io</span>
-                    <a class="text-blue-700 font-bold hover:underline" href="about.html">Open Contact Form →</a>
-                </div>
-            </div> <!-- top half end -->
-
-            <div class="flex flex-col sm:flex-row justify-between max-w-6xl w-full mx-auto p-5 border-t border-gray-100 gap-3"> <!-- bottom half -->
-                <div class="text-gray-500">© 2026 Hydra Store AB. All rights reserved.</div>
-                <div class="flex flex-row gap-3">
-                    <a href="about.html" class="text-gray-500 hover:text-gray-800 transition">Contact Us</a>
-                    <span class="text-gray-300">•</span>
-                    <a href="#" class="text-gray-500 hover:text-gray-800 transition">Privacy Policy</a>
-                    <span class="text-gray-300">•</span>
-                    <a href="#" class="text-gray-500 hover:text-gray-800 transition">Terms of Service</a>
+                <div class="border-t border-gray-100 pt-6 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 gap-4">
+                    <p>© 2026 Hydra Store. All rights reserved.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-gray-800 transition">Privacy</a>
+                        <a href="#" class="hover:text-gray-800 transition">Terms</a>
+                    </div>
                 </div>
             </div>
         </footer>
-
-       
 
     </body>
 </html>
