@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart - Hydra Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 px-6 py-4">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-xl font-extrabold tracking-wider text-gray-900">
+                HYDRA STORE
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-6">
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-5">
+            Shopping Cart
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+
+            <!-- Cart Items -->
+            <section id="cart-items" class="lg:col-span-2 space-y-3">
+
+                <!-- Product 1 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="1727175019_1851608.jpg"
+                             alt="Wireless Headphones"
+                             class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">
+                            Wireless Headphones
+                        </h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Comfortable wireless headphones with clear sound and noise cancellation.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$149</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">
+                        Remove
+                    </button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="hyperx_alloy_origins_60_us_1_top_down_renamed_6_4ad0353b-41b4-45c9-8ef5-8ee2889bb384.webp"
+                             alt="Mechanical Keyboard"
+                             class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Mechanical Keyboard</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Solid aluminum keyboard with smooth switches and soft backlight.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$219</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="microphone.jpg" alt="Gaming Microphone" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Gaming Microphone</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            High-quality microphone for clear audio capture during gaming sessions.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$59</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="product4.jpg" alt="Wool & Felt Desk Mat" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Wool & Felt Desk Mat</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Soft desk mat with non-slip base to keep your workspace clean and comfortable.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$42</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="product5.jpg" alt="Titanium Smartwatch" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Titanium Smartwatch</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Clear OLED display with daily fitness tracking and long battery life.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$289</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="product6.jpg" alt="Smart Speaker" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Smart Speaker</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Compact 360-degree room speaker with rich sound and simple controls.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$189</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="product7.jpg" alt="Ergonomic Precision Mouse" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Ergonomic Precision Mouse</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Smooth scroll wheel and silent clicks built for long study and work sessions.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$89</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 bg-white border border-gray-200 rounded-xl p-3 shadow-sm">
+                    <div class="w-16 h-16 flex-shrink-0 rounded-lg border border-gray-100 p-1">
+                        <img src="product8.jpg" alt="Desk Balance Lamp" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="flex-grow min-w-0">
+                        <h3 class="text-base font-bold text-gray-900 mb-1">Desk Balance Lamp</h3>
+                        <p class="text-xs text-gray-600 mb-2">
+                            Minimalist warm LED lamp with adjustable brightness for eye comfort.
+                        </p>
+                        <span class="text-sm font-bold text-gray-900">$129</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">-</button>
+                        <span class="font-semibold text-sm min-w-[1.5rem] text-center">1</span>
+                        <button class="bg-blue-50 text-blue-600 font-semibold px-2.5 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">+</button>
+                    </div>
+
+                    <button class="text-red-500 hover:text-red-700 font-semibold text-xs">Remove</button>
+                </div>
+
+            </section>
+
+            <!-- Order Summary -->
+            <section id="cart-summary"
+                class="lg:col-span-1 w-full bg-white p-4 rounded-xl shadow-sm border border-gray-200 sticky top-6">
+
+                <h3 class="text-lg font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">
+                    Order Summary
+                </h3>
+
+                <div class="space-y-3 text-sm text-gray-600">
+
+                    <div class="flex justify-between">
+                        <p>Subtotal</p>
+                        <span class="font-medium text-gray-900">$1,165.00</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <p>Shipping</p>
+                        <span class="font-medium text-gray-900">$10.00</span>
+                    </div>
+
+                    <div class="flex justify-between text-emerald-600">
+                        <p>Discount</p>
+                        <span class="font-medium">-$15.00</span>
+                    </div>
+
+                    <div class="flex justify-between pt-3 border-t border-gray-200 font-bold text-gray-900">
+                        <p>Total</p>
+                        <span class="text-lg text-blue-600">$1,160.00</span>
+                    </div>
+
+                </div>
+
+                <button
+                    class="w-full mt-5 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2.5 px-4 rounded-lg shadow-sm transition cursor-pointer">
+                    Proceed to Checkout
+                </button>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white py-5 text-center text-sm text-gray-500">
+        <p>© 2026 Hydra Store</p>
+    </footer>
+
+</body>
+</html>
